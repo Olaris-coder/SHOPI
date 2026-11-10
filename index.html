@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlueCart | Shop with ease</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+<header><a class="brand" href="/"> <span>B</span> BlueCart</a><nav><a href="#products">Shop</a><a href="#about">About</a></nav><button id="cart-toggle">Cart <b id="cart-count">0</b></button></header>
+<main>
+<section class="hero"><div><p class="eyebrow">WELCOME TO BLUECART</p><h1>Good finds.<br><em>Great prices.</em></h1><p>Discover everyday essentials and add your favourites to your cart.</p><a class="cta" href="#products">Start shopping</a></div><div class="hero-mark">B</div></section>
+<section class="products" id="products"><p class="eyebrow">OUR COLLECTION</p><h2>Featured products</h2><div id="product-grid" class="grid"><p>Loading products…</p></div></section>
+<section class="about" id="about"><p class="eyebrow">SHOP WITH CONFIDENCE</p><h2>Shopping made simple.</h2><p>Browse products, manage your cart, and send your order in a few easy steps.</p></section>
+</main>
+<footer><a class="brand" href="/"><span>B</span> BlueCart</a><p>© <span id="year"></span> BlueCart</p></footer>
+<div id="backdrop" hidden></div><aside id="drawer" aria-label="Shopping cart"><div class="drawer-head"><h2>Your cart</h2><button id="cart-close" aria-label="Close cart">×</button></div><div id="cart-items">Your cart is empty.</div><div class="checkout"><p class="total">Total <strong id="cart-total">UGX 0</strong></p><form id="checkout-form"><label>Full name<input name="name" required></label><label>Email<input name="email" type="email" required></label><label>Phone (optional)<input name="phone"></label><button class="cta" type="submit" id="checkout-button">Place order</button></form><p id="message" role="status"></p></div></aside>
+</body></html>
